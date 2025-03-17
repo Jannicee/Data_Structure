@@ -8,11 +8,11 @@ struct node {
 };
 
 struct node *createnode(int angka) {
-    struct node *new = (struct node*) malloc(sizeof(struct node));
-    new->angka = angka;
-    new->next = NULL;
-    new->prev = NULL;
-    return new;
+    struct node *newnode = (struct node*) malloc(sizeof(struct node));
+    newnode->angka = angka;
+    newnode->next = NULL;
+    newnode->prev = NULL;
+    return newnode;
 }
 
 struct node *head = NULL;
